@@ -1,0 +1,45 @@
+{
+  "name": "cloud-ops-nextjs-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --ci --testPathPattern=\\.test.ts? --reporters=jest-junit --reporters=default",
+    "test:e2e": "playwright test --ui",
+    "test:ci": "jest --ci --testPathPattern=\\.test.ts? --reporters=jest-junit --reporters=default --coverage",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@microsoft/applicationinsights-web": "^3.3.0",
+    "@mui/material-nextjs": "^5.16.4",
+    "@racwa/react-components": "^5.3.16",
+    "@racwa/styles": "^4.0.13",
+    "@racwa/validation": "^4.0.11",
+    "fetch-mock": "^10.1.1",
+    "jest-junit": "^16.0.0",
+    "next": "14.2.5",
+    "prettier": "^3.3.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-loading-icons": "^1.1.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "typescript": "^5"
+  }
+}
